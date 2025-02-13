@@ -354,9 +354,12 @@ h1 {
     margin-bottom: 10px;
   }
   .grid-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 14px;
     padding: 0 10px;
-    text-align: center;
   }
   .grid-img-2 {
     display: none;
