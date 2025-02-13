@@ -171,6 +171,9 @@ button {
   margin: 10px 0;
 }
 
+.color-rating {
+  color: black;
+}
 
 /* ESTILOS PARA PRODUCTOS */
 .cards-container {
@@ -332,7 +335,8 @@ h1 {
     max-width: 200px;
   }
   .color-btn {
-    font-size: 12px;
+    font-size: 10px;
+    width: auto;
   }
   /*AJUSTE GRID: SOBRE NOSOTROS*/
   .grid-container {
@@ -352,6 +356,7 @@ h1 {
   .grid-container p {
     font-size: 14px;
     padding: 0 10px;
+    margin-bottom: 20px;
   }
   .grid-img-2 {
     display: none;
