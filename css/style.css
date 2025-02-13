@@ -356,7 +356,6 @@ h1 {
   .grid-container p {
     font-size: 14px;
     padding: 0 10px;
-    margin-bottom: 20px;
   }
   .grid-img-2 {
     display: none;
@@ -364,7 +363,13 @@ h1 {
   .grid-img-3 {
     display: none;
   }
+  .grid-texto-2 {
+    margin-bottom: 10px;
+  }
   .grid-texto-3 {
+    margin-bottom: 10px;
+  }
+  .grid-texto-4 {
     margin-bottom: 10px;
   }
   .grid-container p {
