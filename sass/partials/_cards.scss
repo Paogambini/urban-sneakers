@@ -1,0 +1,19 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(5,18%);
+    justify-content: center;
+    gap: 20px;
+    .card {
+        max-width: 250px;
+        width: 100%;
+        .color-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+  }

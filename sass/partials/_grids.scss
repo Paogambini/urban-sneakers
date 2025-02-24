@@ -1,0 +1,55 @@
+//grid de about
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50px repeat(2,300px) 250px 100px;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "img1 texto1 texto1"
+    "texto2 texto2 img2"
+    "img3 texto3 texto3"
+    "texto4 texto4 texto4";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    h1 {
+        font-family: "Concert One", serif;
+        font-weight: 400;
+        font-style: normal;
+        .grid-titulo {
+            grid-area: titulo;
+        }
+      }
+    p {
+        font-size: 20px;
+        .grid-texto-1 {
+            grid-area: texto1;
+        }
+        .grid-texto-2 {
+            grid-area: texto2;
+        }
+        .grid-texto-3 {
+            grid-area: texto3;
+        }
+        .grid-texto-4 {
+            grid-area: texto4;
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    img {
+        width: 80%;
+        height: 90%;
+        .grid-img-1 {
+            grid-area: img1;
+        }
+        .grid-img-2 {
+            grid-area: img2;
+        }
+        .grid-img-3 {
+            grid-area: img3;
+        }
+    }
+  }

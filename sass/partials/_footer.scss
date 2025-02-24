@@ -1,0 +1,33 @@
+footer {
+    .logo-container {
+        display: block;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        p {
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        width: 100%;
+        }
+        a {
+            display: inline-block;
+            img {
+                border-radius: 50%;
+            }
+            .img-redes {
+                width: 50px;
+                height: 50px;
+            }
+            .instagram-img {
+               @extend .img-redes;
+            }
+              
+              .facebook-img {
+                @extend .img-redes;
+            }
+        }
+    }
+  } 
