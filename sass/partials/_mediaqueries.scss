@@ -80,6 +80,10 @@
           }
         }
     }
+    //para que las cards de reviews se apilen
+    .col-md-4 {
+      flex: 1 1 100%;  
+    }
     footer {
       padding-top: 10px;
       .logo-container {
