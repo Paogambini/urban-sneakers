@@ -81,23 +81,21 @@ header .fondoNav a img {
   font-family: "Concert One", serif;
   font-weight: 400;
   font-style: normal;
-}
-.grid-container h1 .grid-titulo {
   grid-area: titulo;
 }
 .grid-container p {
   font-size: 20px;
 }
-.grid-container p .grid-texto-1 {
+.grid-container .grid-texto-1 {
   grid-area: texto1;
 }
-.grid-container p .grid-texto-2 {
+.grid-container .grid-texto-2 {
   grid-area: texto2;
 }
-.grid-container p .grid-texto-3 {
+.grid-container .grid-texto-3 {
   grid-area: texto3;
 }
-.grid-container p .grid-texto-4 {
+.grid-container .grid-texto-4 {
   grid-area: texto4;
   justify-self: center;
   align-self: center;
@@ -108,13 +106,13 @@ header .fondoNav a img {
   width: 80%;
   height: 90%;
 }
-.grid-container img .grid-img-1 {
+.grid-container .grid-img-1 {
   grid-area: img1;
 }
-.grid-container img .grid-img-2 {
+.grid-container .grid-img-2 {
   grid-area: img2;
 }
-.grid-container img .grid-img-3 {
+.grid-container .grid-img-3 {
   grid-area: img3;
 }
 
