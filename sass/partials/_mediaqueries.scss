@@ -106,3 +106,9 @@
        }
     }
   }
+
+@media (min-width: 501px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
