@@ -376,8 +376,14 @@ footer .logo-container a .img-redes, footer .logo-container a .facebook-img, foo
     font-size: 10px;
     width: auto;
   }
-}
-@media (max-width: 500px) and (max-width: 500px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews-container .review-card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "texto1" "img1" "texto2" "img2" "texto3" "img3" "texto4";
@@ -402,45 +408,6 @@ footer .logo-container a .img-redes, footer .logo-container a .facebook-img, foo
   }
   .grid-container img :hover {
     transform: scale(1.1);
-  }
-  .grid-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-}
-@media (max-width: 500px) {
-  @keyframes animacionTitulo {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  @keyframes animacionTexto {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  @keyframes animacionImagenes {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
   }
   footer {
     padding-top: 10px;
