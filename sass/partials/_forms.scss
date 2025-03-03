@@ -39,9 +39,27 @@
             cursor: pointer;
             width: 50%;
             margin: 10px 0;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            
+            //animacion de botones de enviar
+            &:hover {
+                animation: botonEnviar 0.5s ease forwards;
+                color: white;
+            }
         }
         .color-rating {
             color: black;
         }
+    }
+}
+
+@keyframes botonEnviar {
+    0% {
+        background-color: black;
+        color: white;
+    }
+    100% {
+        background-color: grey; 
+        color: white;
     }
 }

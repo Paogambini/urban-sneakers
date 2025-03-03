@@ -1,3 +1,23 @@
+
+//grid de index
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+    a {
+        width: 100%;
+        max-width: 300px;
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
 //grid de about
 .grid-container {
     display: grid;
@@ -17,9 +37,13 @@
         font-weight: 400;
         font-style: normal;
         grid-area: titulo;
+        animation: animacionTitulo 1s ease-out;
       }
     p {
         font-size: 20px;
+    }
+    .grid-texto-1, .grid-texto-2, .grid-texto-3, .grid-texto-4 {
+        animation: animacionTexto 1.5s ease-out;
     }
     .grid-texto-1 {
         grid-area: texto1;
@@ -40,6 +64,8 @@
     img {
         width: 80%;
         height: 90%;
+        transition: transform 0.3s ease-in-out;
+        animation: animacionImagenes 1s ease-out;
     }
     .grid-img-1 {
         grid-area: img1;
@@ -51,3 +77,42 @@
         grid-area: img3;
     }
   }
+
+  //animaciones
+  @keyframes animacionTitulo {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacionTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes AnimacionImagenes {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+//zoom a las imagenes
+img:hover {
+    transform: scale(1.1);  
+}

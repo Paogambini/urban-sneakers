@@ -15,9 +15,27 @@
             cursor: pointer;
             width: 50%;
             font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+
+            //animacion para botones de comprar
+            &:hover {
+              animation: botonComprar 0.5s ease forwards;
+              color: white;
+          }
         }
     }
 }
+//animacion
+@keyframes botonComprar {
+  0% {
+      background-color: black;
+  }
+  100% {
+      background-color: gray;
+  }
+}
+
 
 //cards de reseñas
 .reviews-container {
@@ -36,6 +54,9 @@
       background-color: #fff;
       flex-direction: column;
       align-items: center;
+      opacity: 0;
+      animation: cardsReviews 0.8s ease-out forwards;  
+      position: relative; 
       .card {
         padding: 15px;
         h5 {
@@ -46,4 +67,16 @@
         }
       }
     }
+}
+
+//animacion
+@keyframes cardsReviews {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
 }
