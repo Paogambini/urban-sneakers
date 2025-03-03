@@ -45,50 +45,59 @@
         }
       }
     }
+    
     //grid de about
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "titulo"
-        "texto1"
-        "img1"
-        "texto2"
-        "texto3"
-        "texto4";
-        gap: 10px;
-        width: 100%;
-        max-width: 100vw;
-        padding: 10px;
-        margin: 0 auto;
-        box-sizing: border-box;
-  
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 14px;
-        width: 100%;
-        padding: 10px 15px;
-        margin: 0 auto;
-        .grid-texto-2 , .grid-texto-3 {
-          margin-bottom: 10px;
-        }
+    @media (max-width: 500px) {
+      .grid-container {
+          grid-template-columns: 1fr;
+          grid-template-areas: 
+            "titulo"
+            "texto1"
+            "img1"
+            "texto2"
+            "img2"
+            "texto3"
+            "img3"
+            "texto4";
+          padding: 10px;
       }
   
-      img {
-        width: 90%;
-        max-width: 300px;
-        display: block;
-        height: auto;
-        margin: 0 auto 10px;
-        margin-bottom: 10px;
-          .grid-img-2 , .grid-img-3 {
-            display: none;
-          }
-        }
-    }
+      .grid-container p {
+          width: 100%;
+          max-width: 100%;
+          padding: 10px 15px;
+          text-align: center;
+      }
+  
+      .grid-container img {
+          width: 90%;
+          max-width: 300px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+      }
+  }
+  
+  // animaciones
+  @keyframes animacionTitulo {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes animacionTexto {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes animacionImagenes {
+      0% { opacity: 0; transform: translateX(-100%); }
+      100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  // zoom a las imagenes
+  img:hover {
+      transform: scale(1.1);  
+  }
     .col-md-4 {
       flex: 1 1 100%;  
     }
