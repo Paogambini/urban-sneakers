@@ -382,19 +382,33 @@ footer .logo-container a .img-redes, footer .logo-container a .facebook-img, foo
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "texto1" "img1" "texto2" "img2" "texto3" "img3" "texto4";
     padding: 10px;
+    grid-gap: 50px;
   }
   .grid-container p {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
     padding: 10px 15px;
+    font-size: 14px;
     text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
   }
   .grid-container img {
-    width: 90%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .grid-container img :hover {
+    transform: scale(1.1);
+  }
+  .grid-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 }
 @media (max-width: 500px) {
@@ -427,12 +441,6 @@ footer .logo-container a .img-redes, footer .logo-container a .facebook-img, foo
       opacity: 1;
       transform: translateX(0);
     }
-  }
-  img:hover {
-    transform: scale(1.1);
-  }
-  .col-md-4 {
-    flex: 1 1 100%;
   }
   footer {
     padding-top: 10px;
