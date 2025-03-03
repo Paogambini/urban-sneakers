@@ -1,3 +1,7 @@
+//variables de sass
+$font-size-small: 14px;
+$margin-small: 10px;
+
 @media (max-width: 500px) {
     body {
       font-size: 14px;
@@ -74,7 +78,7 @@
           p {
             width: 90%;
             padding: 10px 15px;
-            font-size: 14px;
+            font-size: $font-size-small;
             text-align: center;
             box-sizing: border-box;
             margin-bottom: 10px;
@@ -93,11 +97,11 @@
       }
 
     footer {
-      padding-top: 10px;
+      padding-top: $margin-small;
       .logo-container {
         display: flex;
         justify-content: center;
-        margin-bottom: 10px;
+        margin-bottom: $margin-small;
         p {
           display: none;
         }
