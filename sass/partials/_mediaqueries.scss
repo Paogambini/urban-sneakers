@@ -47,6 +47,7 @@
     }
     //grid de about
     .grid-container {
+      display: grid;
       grid-template-columns: 1fr;
       grid-template-areas:
         "titulo"
@@ -55,6 +56,8 @@
         "texto2"
         "texto3"
         "texto4";
+        gap: 10px;
+        padding: 10px;
   
       p {
         display: flex;
@@ -63,13 +66,18 @@
         text-align: center;
         font-size: 14px;
         padding: 0 10px;
-        .grid-texto-2, .grid-texto-3 {
+        .grid-texto-2  {
+          margin-bottom: 10px;
+        }
+        .grid-texto-3 {
           margin-bottom: 10px;
         }
       }
   
       img {
         width: 80%;
+        display: block;
+        margin: 0 auto 10px;
         margin-bottom: 10px;
           .grid-img-2 {
             display: none;
