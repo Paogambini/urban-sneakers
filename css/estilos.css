@@ -388,10 +388,7 @@ footer .logo-container a .img-redes, footer .logo-container a .facebook-img, foo
     font-size: 14px;
     padding: 0 10px;
   }
-  .grid-container p .grid-texto-2 {
-    margin-bottom: 10px;
-  }
-  .grid-container p .grid-texto-3 {
+  .grid-container p .grid-texto-2, .grid-container p .grid-texto-3 {
     margin-bottom: 10px;
   }
   .grid-container img {
