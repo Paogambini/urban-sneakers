@@ -1,0 +1,37 @@
+//variables 
+$color-primario:rgb(255, 255, 255);
+$color-secundario:rgb(138, 138, 138);
+$color-hover:rgb(43, 43, 43);
+$color-borde:black;
+
+.accordion {
+    max-width: 800px;
+    margin: 2rem auto;
+    .accordion-item {
+        border: 1px solid $color-borde;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .accordion-header {
+        .acordion-button {
+            background-color: $color-secundario;
+            color: $color-primario;
+            font-weight: bold;
+            transition: background-color 0.3s ease color 0.3s ease;
+            &:hover {
+                background-color: $color-hover;
+                color: #000;
+            }
+        }
+    }
+
+    .accordion-collapse {
+        .accordion-body {
+            background-color: white;
+            padding: 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+}
